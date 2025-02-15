@@ -2,6 +2,7 @@ from sys import exit
 
 
 def main() -> None:
+    error_message: str = 'Please enter valid input...'
     exit_message: str = 'Exiting program...'
     while True:
         try:
@@ -20,10 +21,10 @@ def main() -> None:
             else:
                 money_given: float = float(user_input)
         except IndexError:
-            print('Please enter some valid input...')
+            print(error_message)
             continue
         except ValueError:
-            print('Please enter some valid input...')
+            print(error_message)
             continue
         except KeyboardInterrupt:
             print(exit_message)
