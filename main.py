@@ -51,7 +51,7 @@ def main() -> None:
                 diff = round(diff - 0.01, 2)
                 num_of_pennies += 1
 
-        print(f'The change is ${change:.2f}.')
+        print(f'The change is ${change:,.2f}.')
 
         print(f'{num_of_quarters} quarters, {num_of_dimes} dimes, {num_of_nickels} nickels, and {num_of_pennies} pennies are required for this change.')
 
